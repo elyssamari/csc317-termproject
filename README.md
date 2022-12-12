@@ -6,6 +6,9 @@ The purpose of this repository is to store all the code for your web application
 
 Please follow the instructions below and fill in the information requested when prompted.
 
+## Preview Project
+[![termproject](https://user-images.githubusercontent.com/70128989/206999403-02b459e0-a012-40bf-8cc8-a05503d289af.png)](https://youtu.be/LAqw1jYqJOY)
+
 ## Student Information
 
 |               | Information                |
