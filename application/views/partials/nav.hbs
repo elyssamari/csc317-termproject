@@ -1,0 +1,19 @@
+<body>
+<nav> 
+  <div class="grid-container">
+  <a id="navbar-home" href="/">home</a>
+  
+      {{#if logged }}
+      <a id = "logout-button">logout</a>
+      {{else}}
+      <a id= "navbar-login" href="/login">login</a>
+       {{/if}}
+
+  <input id="search-bar" type="text">
+  <button id="nav-button" type="submit">search</button>
+  <a id="navbar-reg" href="/registration">register</a>
+  <a id="navbar-postimage" href="/postimage">post images</a>
+  {{!-- <a id="navbar-imagepost" href="/imagepost">posts</a> --}}
+  </div>
+</nav>
+</body>

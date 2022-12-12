@@ -1,0 +1,23 @@
+<body>
+    <title>Post Image</title>
+
+        <h1>Post Image</h1>
+   
+    <form id="reg-form" method="POST" enctype="multipart/form-data" action='/posts/createPost'> 
+        <label>Post Title </label><br><br/>
+        <input id="post_title" type="text" name="title" required/><br></br>
+
+        <label>Description </label><br><br/>
+        <input id="description" type="text" name="description" required/><br></br>
+
+        <label>Upload Image: </label>
+        <input id="upload_image" type="file" name="uploadImage" required/><br><br/>
+
+        <label>Accept Use Policy for uploading images</label>
+        <input class="check_box" type="checkbox" required/><br></br>
+
+        <input type="submit" value="submit"/>
+    </form>
+   
+</body>
+</html>

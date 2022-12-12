@@ -1,0 +1,24 @@
+#container {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 1fr;
+    grid-auto-columns: 1fr;
+    gap: .25em;
+    width: 100%;
+    margin: 10px;
+}
+
+  [id^="photo-"]{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items:center;
+    grid-template-areas: "photo" "title" ;
+    border: 1px solid #eeeeee;
+    box-shadow: 0 2px 10px #cccccc
+  }
+
+  body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:bold;
+}

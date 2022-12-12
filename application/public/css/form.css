@@ -1,0 +1,298 @@
+header{
+    background-color: #c8E7FF;
+    height: 125px;
+    margin: 10px;
+}
+
+h3{
+    text-align: center;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 75px;
+    font-weight: normal;
+    padding: 20px;
+    color: black;
+    margin-top: 10px;
+}
+
+h4{
+    background-color: #c8E7FF;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 20px;
+    font-weight: normal;
+    padding: 10px;
+    color: black;
+    text-align: center;
+}
+
+h1{
+    text-decoration: underline;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 40px;
+    font-weight: normal;
+    padding: 10px;
+    color: black;
+}
+
+h5{
+    font-family:'Courier New', Courier, monospace;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    margin-left: 10px;
+}
+
+[id^="post-container"]{
+    margin-left: 500px;
+    border: 2px solid black;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-right: 500px;
+    border-radius: 10px;
+}
+
+[id^="footer"]{
+    position: absolute;
+    bottom: -50;
+    width: 100%;
+   }
+
+[id^="post-image"]{
+    margin-top: 50px;
+    margin-left: 80px;
+}
+
+[id^="navbar-login"]{
+    color: black;
+    margin: auto;
+    font-size: 25px;
+}
+
+[id^="navbar-home"]{
+    color: black;
+    margin: auto;
+    font-size: 25px;
+}
+
+[id^="logout-button"]{
+    color: black;
+    margin: auto;
+    text-decoration-line: underline;
+    font-size:25px;
+}
+
+[id^="navbar-reg"]{
+    color: black;
+    margin: auto;
+    font-size: 25px;
+}
+
+[id^="navbar-postimage"]{
+    color: black;
+    margin: auto;
+    font-size: 25px;
+}
+
+[id^="navbar-imagepost"]{
+    color: black;
+    margin: auto;
+}
+
+h2{
+    font-family:'Courier New', Courier, monospace;
+    font-size: 30px;
+    margin-left: 10px;
+}
+
+label{
+    font-family:'Courier New', Courier, monospace;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    border: none;
+}
+
+input[type='submit']{
+    font-family:'Courier New', Courier, monospace;
+    font-weight:bold;
+    text-align: center;
+    color: black;
+    background-color: #c8e7ff; 
+    font-size: 16px;
+    border-radius: 8px;
+    border: 2px solid black;
+    width: 80px;
+}
+
+button[type='submit']{
+    font-family:'Courier New', Courier, monospace;
+    font-weight:bold;
+    text-align: center;
+    color: black;
+    background-color: #c8e7ff; 
+    font-size: 16px;
+    border-radius: 8px;
+    border: 2px solid black;
+    width: 80px;
+}
+
+input[type='checkbox'] {
+    width:14px;
+    height:14px;
+    border-radius:10px;
+    border:2px solid black;
+}
+
+a{
+    font-family:'Courier New', Courier, monospace;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+input{
+    width:500px;
+}
+
+#flash-message{
+    position: fixed;
+    left: 50%;
+    top: 25%;
+    transform: translate(-50%,0);
+    z-index: 9999;
+}
+
+#flash-message div{
+    text-align:center;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns:auto auto auto auto auto auto;
+    grid-gap: 10px;
+}
+
+#main-content{
+    grid-area: content;
+    padding-top: 75px;
+    padding-bottom: .35em;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: grid;
+    gap: .4rem .4rem; 
+    grid-template-rows: auto auto;
+    grid-template-columns: auto auto auto auto;
+    grid-auto-columns: auto auto auto auto;
+    grid-auto-rows: auto;
+}
+
+input[id^=search-bar] {
+    border: 2px solid black;
+    border-radius: 25px;
+    margin-top: 8px;
+    margin-right: 2px;
+    width: 700px;
+    height: 20px;
+  }
+
+  [id^=nav-button]{
+      margin-left: -65px;
+      margin-top: 6px;
+      font-size: 25px;
+  }
+
+  [id^=comment-text]{
+    margin-top: 25px;
+    border: 2px solid black;
+    padding-bottom: 100px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    width: 1630px;
+    border-radius: 10px;
+  }
+
+  [id^=comment-submit]{
+      margin-bottom: 50px;
+}
+
+  #comment-container{
+      display: grid;
+      grid-area: comments;
+      grid-template-rows: auto;
+      grid-template-columns: 1fr;
+      gap: .2rem;
+      grid-template-areas: 
+      "messages"
+      "comment-box";
+      max-height: 80vh;
+  }
+
+  #messages{
+      grid-area: messages;
+      overflow-y: auto;
+      display: flex;
+      flex-flow: column-reverse nowrap;
+      scroll-behavior: smooth;
+      border: 2px solid black;
+      box-shadow: 1px 1px 2px 2px #e0e0e0;
+      border-radius: .35rem;
+      height: 300px;
+    }
+
+  div[id^=message-]{
+      display: grid;
+      grid-template-rows: .3fr 1fr;
+      grid-template-columns: 1fr 1fr;
+      gap: .2em;
+      padding: .25rem;
+      margin: .2rem;
+      font-size: 1rem;
+      border: 0.0625rem solid black;
+      border-radius: 10px;
+      grid-template-areas:
+      "author created"
+      "comment comment";
+  }
+
+  .author-text{
+        grid-area: author;
+        justify-self: start;
+        color: black;
+  }
+
+  .comment-text{
+        grid-area: comment;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-height: 50px;
+        min-height: 50px;
+  }
+
+  .date-posted{
+      grid-area: created;
+      justify-self: end;
+  }
+
+  .form[id^=reg-form]{
+    margin-left: 10px;
+  }
+
+.card{
+    font-family:'Courier New', Courier, monospace;
+    font-size: 20px;
+    white-space: no-wrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-weight: bold;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.card-image{
+    height: 150px;
+    margin-top: 10px;
+    margin-left: 75px;
+    width: 250px;
+}
+
+.card-body{
+    margin: 5px;
+}
